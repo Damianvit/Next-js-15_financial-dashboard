@@ -1,3 +1,5 @@
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 # 💰 Next-js-15 financial-dashboard with Prisma & MongoDB
 
 Welcome to the **Financial Dashboard** project! This repository is a structured learning journey where you'll build a **full-stack financial dashboard** using **Next.js 15 App Router, Prisma ORM, and MongoDB**.
