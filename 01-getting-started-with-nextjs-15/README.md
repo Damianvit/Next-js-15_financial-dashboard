@@ -1,6 +1,6 @@
 # 01-getting-started-with-nextjs-15
 
-** Install pnpm globaly **
+**Install pnpm globaly**
 
 ```sh
 npm install -g pnpm
@@ -9,7 +9,7 @@ npm install -g pnpm
 **Create a Next.js app**
 
 ```sh
-npx create-next-app@latest financial-dashboard --example "https://github.com/vercel/next-learn/tree/main/dashboard/starter-example" --use-pnpm
+npx create-next-app@latest financial-dashboard --example "https://github.com/Damianvit/Next-js-15_financial-dashboard/tree/main/01-getting-started-with-nextjs-15/starter-code" --use-pnpm
 ```
 
 **install project packages with**
