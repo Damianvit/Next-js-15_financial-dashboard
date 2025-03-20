@@ -1,6 +1,6 @@
 # 01-getting-started-with-nextjs-15
 
-**_ Install pnpm globaly _**
+** Install pnpm globaly **
 
 ```sh
 npm install -g pnpm
@@ -12,17 +12,17 @@ npm install -g pnpm
 npx create-next-app@latest financial-dashboard --example "https://github.com/vercel/next-learn/tree/main/dashboard/starter-example" --use-pnpm
 ```
 
-**_ install project packages with _**
+** install project packages with **
 
 ```sh
 pnpm i
 ```
 
-**_ Start development server _**
+** Start development server **
 
 ```sh
 pnpm dev
 ```
 
-**_ Run the development server _**
-<a href="http://localhost:3000" target="_blank" rel="noopener noreferrer"> http://localhost:3000 </a>
+** Run the development server **
+[http://localhost:3000](http://localhost:3000)
