@@ -1,4 +1,4 @@
-# 02-css-styling-best-practices
+# 03-optimizing-fonts-and-images
 
 ## Setup Section
 
@@ -13,7 +13,7 @@ npm install -g pnpm
 **Create a Next.js app**
 
 ```sh
-npx create-next-app@latest financial-dashboard --example "https://github.com/Damianvit/Next-js-15_financial-dashboard/tree/main/02-css-styling-best-practices/starter-template" --use-pnpm
+npx create-next-app@latest financial-dashboard --example "https://github.com/Damianvit/Next-js-15_financial-dashboard/tree/main/03-optimizing-fonts-and-images/starter-template" --use-pnpm
 ```
 
 **install project packages with**
