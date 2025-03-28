@@ -54,7 +54,7 @@ export default function RootLayout({
 
 ### [Tailwind class](https://www.tailwindcss.com)
 
-**Paste it above the <p> element in /app/page.tsx**
+**Paste it above the p element in /app/page.tsx**
 
 ```tsx
 <div className="relative w-0 h-0 border-l-[15px] border-r-[15px] border-b-[26px] border-l-transparent border-r-transparent border-b-black" />
