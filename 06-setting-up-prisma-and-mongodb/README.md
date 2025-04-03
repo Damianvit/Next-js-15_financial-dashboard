@@ -33,3 +33,84 @@ pnpm dev
 [http://localhost:3000](http://localhost:3000)
 
 ## Main Section
+
+-   From this chapter onwards the tutorial flow will become more different form the one on Next Learn website. The major difference will sterm from our use of Prisma and Mongodb.
+-   The chapter's README.md file will be of great help.
+
+**Create a Vercel account**
+
+visit [vercel signup page](https://vercel.com/signup)
+
+**Install Prisma**
+
+```sh
+pnpm add prisma @prisma/client
+```
+
+**Initialize Prisma**
+
+```sh
+pnpx prisma init
+```
+
+-   This creates a prisma/schema.prisma file and a .env file if it doesn't exist yet
+
+**Modify prisma/schema.prisma file **
+
+-   Open ./prisma/schema.prisma and modify the file
+
+```prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  name     String
+  email    String @unique
+  password String
+}
+
+model Invoice {
+  id         String @id @default(auto()) @map("_id") @db.ObjectId
+  customerId String @db.ObjectId
+  amount     Int
+  status     String
+  date       DateTime
+  customer    Customer @relation(fields: [customerId], references: [id])
+
+}
+
+model Customer {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  name     String
+  email    String @unique
+  imageUrl String
+  invoices Invoice[] // Relation field
+}
+
+model Revenue {
+  id      String @id @default(auto()) @map("_id") @db.ObjectId
+  month   String @unique
+  revenue Int
+}
+
+```
+
+**Generate Prisma Client**
+
+```sh
+pnpx prisma generate
+```
+
+**Push changes to mongodb atlas**
+
+```sh
+pnpx prisma db push
+```
