@@ -26,6 +26,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Local environment files (ignore .env in all chapters)
+!**/.env.example
 **/.env*
 **/.env.local
 **/.env.development
@@ -71,6 +72,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+!.env.example
 .env*.local
 .env
 

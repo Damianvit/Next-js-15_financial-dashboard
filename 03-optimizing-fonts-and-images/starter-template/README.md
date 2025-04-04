@@ -1,7 +1,4 @@
-# 01-getting-started-with-nextjs-15
-
-### stater-template.
-
+# stater-template.
 
 This is the starter template for the Next.js Financial Dashboard App Router Course. It contains the starting code for the finacial dashboard application.
 

@@ -114,3 +114,8 @@ pnpx prisma generate
 ```sh
 pnpx prisma db push
 ```
+
+```sh
+pnpx prisma studio
+```
+

@@ -37,58 +37,20 @@ pnpm dev
 **Edit the /app/layout.tsx**
 
 ```tsx
-import "@/app/ui/global.css"; // 🔥 Add this
-
+import '@/app/ui/global.css';
+import { inter } from '@/app/ui/fonts';
+ 
 export default function RootLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-    return (
-        <html lang="en">
-            <body>{children}</body>
-        </html>
-    );
-}
-```
-
-### [Tailwind class](https://www.tailwindcss.com)
-
-**Paste it above the p element in /app/page.tsx**
-
-```tsx
-<div className="relative w-0 h-0 border-l-[15px] border-r-[15px] border-b-[26px] border-l-transparent border-r-transparent border-b-black" />
-```
-
-### [CSS Modules](https://nextjs.org/docs/app/getting-started/css#css-modules)
-
-**/app/ui/home.module.css**
-
-```css
-.shape {
-    height: 0;
-    width: 0;
-    border-bottom: 30px solid black;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-}
-```
-
-**/app/page.tsx**
-
-```tsx
-import AcmeLogo from '@/app/ui/acme-logo';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
-import styles from '@/app/ui/home.module.css'; // <<<<< Add this >>>>>
-
-export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col p-6">
-  {/* Add this >>>>>>>   */}
-       <div className={styles.shape} />
-  {/* <<<<<<<<<<<<<   */}
-    // ...
-  )
+    <html lang="en">
+      <body className={`${inter.className} antialiased`}>{children}</body>
+    </html>
+  );
 }
+
 ```
+

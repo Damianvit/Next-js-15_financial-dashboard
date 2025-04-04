@@ -85,9 +85,7 @@ import styles from '@/app/ui/home.module.css'; // <<<<< Add this >>>>>
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
-  {/* Add this >>>>>>>   */}
        <div className={styles.shape} />
-  {/* <<<<<<<<<<<<<   */}
     // ...
   )
 }
