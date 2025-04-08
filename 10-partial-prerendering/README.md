@@ -33,3 +33,8 @@ pnpm dev
 [http://localhost:3000](http://localhost:3000)
 
 ## Main Section
+
+**Install canary release of Nextjs**
+```sh
+pnpm install next@canary
+```
